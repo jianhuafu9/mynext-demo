@@ -28,7 +28,6 @@ export default function NavLinks() {
     <>
       {links.map((link) => {
         const LinkIcon = link.icon;
-        console.log(pathname === link.href, 'nulldwada');
         return (
           <Link
             key={link.name}
