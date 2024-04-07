@@ -1,4 +1,5 @@
 import type { NextAuthConfig } from 'next-auth';
+import GoogleProvider from 'next-auth/providers/google';
 
 export const authConfig = {
   pages: {
@@ -18,4 +19,5 @@ export const authConfig = {
     },
   },
   providers: [], // Add providers with an empty array for now
+  secret: process.env.NEXT_PUBLIC_SECRET,
 } satisfies NextAuthConfig;
