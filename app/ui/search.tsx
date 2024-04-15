@@ -41,15 +41,6 @@ export default function Search({ placeholder }: { placeholder: string }) {
 
   return (
     <>
-      <div>
-        <input
-          type="file"
-          name="jianhua"
-          id="jianhua"
-          onChange={handleFileUpload}
-        />
-        {baseData && <img src={baseData} alt="" />}
-      </div>
       <div className="relative flex flex-1 flex-shrink-0">
         <label htmlFor="search" className="sr-only">
           Search

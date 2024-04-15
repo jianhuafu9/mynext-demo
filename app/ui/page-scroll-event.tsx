@@ -18,7 +18,8 @@ const PageScrollEvent = ({ nodeIds, top = 200 }: Props) => {
         });
       }
     });
-  }, []);
+  }, [nodeIds, top]);
+
   return null;
 };
 

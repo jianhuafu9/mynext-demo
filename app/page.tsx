@@ -1,13 +1,20 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
-import SliderPart from './ui/SliderPart';
-import PageScrollEvent from './ui/PageScrollEvent';
+import '@/styles/nes.css';
+import PageScrollEvent from './ui/page-scroll-event';
 
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      <SliderPart />
+      <div id="slider-part" className="fixed right-0 z-[1] h-24 rounded-[5px]">
+        <span className="flex justify-center">
+          <p className="nes-balloon from-right">
+            I am a lovely tomato. Welcome to my world.
+          </p>
+          <i className="nes-octocat animate mt-10"></i>
+        </span>
+      </div>
       <div className="h-[564px] bg-[url('/fanqie/banner2.png')] bg-cover bg-center" />
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
