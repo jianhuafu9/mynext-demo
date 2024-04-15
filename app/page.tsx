@@ -1,7 +1,6 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
-import '@/styles/nes.css';
 import PageScrollEvent from './ui/page-scroll-event';
 
 export default function Page() {
@@ -10,7 +9,8 @@ export default function Page() {
       <div id="slider-part" className="fixed right-0 z-[1] h-24 rounded-[5px]">
         <span className="flex justify-center">
           <p className="nes-balloon from-right">
-            I am a lovely tomato. Welcome to my world.
+            I am a lovely tomato. <br />
+            Welcome to my world.
           </p>
           <i className="nes-octocat animate mt-10"></i>
         </span>
@@ -45,7 +45,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <PageScrollEvent nodeIds={["topping", "slider-part"]} />
+      <PageScrollEvent nodeIds={['topping', 'slider-part']} />
     </main>
   );
 }
